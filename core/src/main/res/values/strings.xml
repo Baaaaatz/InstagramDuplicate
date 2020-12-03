@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Typicode</string>
+    <string name="container_transition_name">transition_%s</string>
+</resources>

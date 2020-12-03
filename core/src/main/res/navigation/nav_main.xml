@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/nav_dashboard">
+
+    <action
+        android:id="@+id/action_global_to_capture"
+        app:destination="@id/nav_capture" />
+
+    <navigation
+        android:id="@+id/nav_dashboard"
+        app:startDestination="@id/dashboard">
+        <fragment
+            android:id="@+id/dashboard"
+            android:name="com.batzalcancia.dashboard.presentation.DashboardFragment" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/nav_capture"
+        app:startDestination="@id/capture">
+        <fragment
+            android:id="@+id/capture"
+            android:name="com.batzalcancia.capture.presentation.CaptureFragment" />
+    </navigation>
+
+</navigation>
